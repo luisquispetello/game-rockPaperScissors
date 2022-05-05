@@ -99,6 +99,7 @@ body {
 .choice {
     max-width: 9rem;
     cursor: pointer;
+    transform: scale(1);
 }
 
 .choice:nth-child(3){
@@ -109,17 +110,14 @@ body {
     width: 100%;
     transition: transform .2s;
     animation: pulse 1800ms linear infinite;
-
 }
 
 .choice img:hover{
-    transform: scale(1.2);
     transition: transform .2s;
-    animation: pulse 600ms infinite ;
+    animation: pulse 600ms infinite;
 }
 
 .choice img:active{
-    transform: scale(0.9);
 }
 
 .cta {
@@ -174,8 +172,14 @@ body {
 }
 
 @keyframes pulse {
-    50% {
-        scale: 1.05;
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.09);
+    }    
+    100%{
+        transform: scale(1);
     }
 }
 
