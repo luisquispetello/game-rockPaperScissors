@@ -123,11 +123,11 @@ body {
 }
 
 .green-win {
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(90deg) saturate(150%);
 }
 
 .red-lose{
-    filter: hue-rotate(300deg);
+    filter: hue-rotate(300deg) saturate(180%);
 }
 
 .grey-draw {
