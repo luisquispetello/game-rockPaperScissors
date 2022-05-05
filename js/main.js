@@ -21,28 +21,28 @@ function win(userChoice, cpuChoice){
     userScore++
     userScoreCount.innerText = userScore
     document.getElementById(userChoice).classList.add('green-win')
-    setTimeout(() => document.getElementById(userChoice).classList.remove('green-win'), 2700)
+    setTimeout(() => document.getElementById(userChoice).classList.remove('green-win'), 2500)
     resultText.innerHTML = `<h1>You win!</h1> ${userChoice} smash ${cpuChoice}`
     resultBox.style.display = 'grid'
-    setTimeout(() => resultBox.style.display = 'none', 2700) 
+    setTimeout(() => resultBox.style.display = 'none', 2500) 
 }
 
 function draw(userChoice){
     document.getElementById(userChoice).classList.add('grey-draw')
-    setTimeout(() => document.getElementById(userChoice).classList.remove('grey-draw'), 2700)
+    setTimeout(() => document.getElementById(userChoice).classList.remove('grey-draw'), 2500)
     resultText.innerHTML = `<h1>Draw</h1> You both chose ${userChoice}`
     resultBox.style.display = 'grid'
-    setTimeout(() => resultBox.style.display = 'none', 2700) 
+    setTimeout(() => resultBox.style.display = 'none', 2500) 
 }
 
 function lose(userChoice, cpuChoice){
     cpuScore++
     cpuScoreCount.innerText = cpuScore
     document.getElementById(userChoice).classList.add('red-lose')
-    setTimeout(() => document.getElementById(userChoice).classList.remove('red-lose'), 2700)
+    setTimeout(() => document.getElementById(userChoice).classList.remove('red-lose'), 2500)
     resultText.innerHTML = `<h1>You lost</h1> ${cpuChoice} smash ${userChoice}`
     resultBox.style.display = 'grid'
-    setTimeout(() => resultBox.style.display = 'none', 2700) 
+    setTimeout(() => resultBox.style.display = 'none', 2500) 
 }
 
 function play(userChoice) {
