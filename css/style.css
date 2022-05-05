@@ -75,7 +75,7 @@ body {
 }
 
 .rematch-btn:hover {
-    opacity: 0.8;
+    filter: hue-rotate(-15deg);
 }
 
 .rematch-btn:active {
