@@ -37,7 +37,7 @@ body {
     position: relative;
     border: solid;
     border-radius: .1em;
-    margin-bottom: 8em;
+    margin-bottom: 7em;
 }
 
 .score-points {
@@ -152,7 +152,7 @@ body {
     background-color: var(--color-light);
     border-radius: .3em;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    padding: 1em 2em 2em;
+    padding: 1em 1em 2em;
     animation: box 200ms linear;
 }
 
@@ -209,6 +209,10 @@ body {
 
     .choice:nth-child(3){
         overflow: initial;
+    }
+
+    .result-box-content{
+        padding: 1em 2em 2em;
     }
 
 }
