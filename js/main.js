@@ -70,6 +70,7 @@ function main(){
     choicePaper.addEventListener('click', () => play('paper'))
     choiceScissors.addEventListener('click', () => play('scissors'))
     rematchBtn.addEventListener('click', () => rematch())
+    document.addEventListener('contextmenu', event => event.preventDefault());
 }
 
 
