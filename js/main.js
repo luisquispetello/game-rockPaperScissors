@@ -10,7 +10,6 @@ const choiceScissors = document.getElementById('scissors')
 const resultBox = document.querySelector('.result-box')
 const resultText = document.querySelector('.result-box-content')
 
-
 function getCpuChoice() {
     const choices = ['rock', 'paper','scissors']
     const randomNumber = Math.floor(Math.random() * 3)
@@ -72,6 +71,5 @@ function main(){
     rematchBtn.addEventListener('click', () => rematch())
     document.addEventListener('contextmenu', event => event.preventDefault());
 }
-
 
 main()

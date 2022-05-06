@@ -86,7 +86,7 @@ body {
 }
 
 .rematch-btn:active {
-	scale: 0.9;
+	transform: rotate(-5deg) scale(0.9);
 }
 
 /* PLay Game */
@@ -99,7 +99,7 @@ body {
 .choice {
     max-width: 9rem;
     cursor: pointer;
-    transform: scale(1);
+    transition: transform .2s;
 }
 
 .choice:nth-child(3){
@@ -115,9 +115,6 @@ body {
 .choice img:hover{
     transition: transform .2s;
     animation: pulse 600ms infinite;
-}
-
-.choice img:active{
 }
 
 .cta {
@@ -165,7 +162,6 @@ body {
     from{
         opacity: 0;
     }
-
     to{
         opacity: 1;
     }
@@ -225,5 +221,4 @@ body {
     .result-box-content{
         padding: 1em 2em 2em;
     }
-
 }
