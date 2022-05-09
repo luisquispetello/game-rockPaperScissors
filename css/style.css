@@ -71,23 +71,22 @@ body {
 
 /* Button restart game */
 .rematch-btn {
-    font-size: 1em;
+    font-size: 0.8em;
 	margin:1rem;
-    padding: 1rem 2rem;
+    padding: 0.9rem 1.1rem;
     background-color: var(--color-accent);
     color: var(--color-dark);
 	border-radius: 3px;
     border: solid;
     cursor: pointer;
-    transform: rotate(-5deg);
 }
 
 .rematch-btn:hover {
-    filter: hue-rotate(-15deg);
+    opacity: 0.8;
 }
 
 .rematch-btn:active {
-	transform: rotate(-5deg) scale(0.9);
+	transform: scale(0.9);
 }
 
 /* PLay Game */
